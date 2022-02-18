@@ -16,7 +16,7 @@ services:
     env_file: .env
     volumes:
       - ./logstash/config/pipelines.yml:/usr/share/logstash/config/pipelines.yml
-      - ./logstash/pipelines/:/usr/share/logstash/pipeline/
+      - ./logstash/pipeline/:/usr/share/logstash/pipeline/
       - ./logstash/queries/:/usr/share/logstash/config/queries/
     depends_on:
       - elasticsearch
